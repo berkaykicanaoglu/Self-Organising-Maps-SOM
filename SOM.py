@@ -226,7 +226,7 @@ if __name__ == "__main__":
 			# neighborhood
 			SOMnet.updateNeighborWeights()
 			# update learning rate
-			SOMnet.updateLearningRate(epoch)
+			SOMnet.updateLearningRate(timeT)
 			print str(dt.datetime.now()) + ": Epoch: %d, Iter: %d, radius: %f, lr: %f" %(epoch, timeT, SOMnet.currentRadius, SOMnet.lr)
 			timeT += 1	
 		# visualize the lattice	
